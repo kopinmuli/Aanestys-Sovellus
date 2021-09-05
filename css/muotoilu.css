@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&display=swap');
+body, html {
+    background-color: gray;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    background:url("../img/tausta.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+h1 {
+    color:#0d0c0c;
+    font-size: 3.5em;
+    margin:0;
+    padding:0px;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 3px 3px wheat;
+}
+p {
+    font-size: 1.3em;
+    font-weight: bold;
+    color:#0d0c0c;
+    margin:0;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.header {
+    font-size: 0.8em;
+    font-family: 'Lexend Deca', sans-serif;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: left;
+    margin:0px;
+    padding:0;
+    width:100%;
+    height:150px;
+    opacity: 0.8;
+    background-color: rgb(128, 128, 128, .5);
+    z-index:99;
+    border-bottom: 2px solid #0d0c0c;
+}
+.kirjautuminen {
+    font-weight: bold;    
+    position: absolute;
+    top:100px;
+    right:20px;
+    float:right;
+}
+.sisalto {
+    width:500px;
+    height:auto;
+    position: absolute;
+    top: 150px; 
+    left: 50%;
+    transform: translate(-50%,0);
+    padding-bottom: 60px;
+}
+
+.aanesta {
+    font-size: 0.8em;
+    height:40px;
+    width:90px;
+    float:right;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: rgb(16, 19, 16);
+    color: wheat;
+    border: none;
+    border-radius: 4px;
+    margin-left: 20px;
+    margin-right:20px;
+    margin-top:4px;
+    border:1px solid wheat;
+}
+.aanesta:hover {
+    background-color: wheat;
+    color:#0d0c0c;
+}
+label {
+    font-size: 1.2em;
+    margin-right:10px;
+}
+
+form {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+input[type=submit] {
+    width: 125px;
+    height:30px;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #0d0c0c;
+    color: wheat;
+    border: none;
+    border:1px solid wheat;
+    border-radius: 4px;
+}
+input[type=submit]:hover { 
+    color: #0d0c0c;
+    background-color: wheat;
+}
+input[type=text] {
+   height:25px;
+   margin-right:10px;
+   border-radius: 5px;
+}
+
+.kyselynluonti {
+    display:none;
+    position:absolute;
+    top:30px;
+    text-indent: 20px;
+    float:left;
+    line-height: 60px;
+    margin:0;
+    text-align: left;
+    width:490px;
+    height:600px;
+    background-color: rgb(128, 128, 128, .5);
+    border:5px solid #0d0c0c;
+    border-top:40px solid #0d0c0c;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+#kirjautunut {
+    display: none;
+}
+
+.poista {
+    display:none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.7em;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: wheat;
+    border-radius: 4px;
+    margin-top:-35px;
+    margin-left: 3px;
+    border: 2px solid wheat;
+}
+.poista:hover {
+    background-color: wheat;
+    color: rgba(255, 0, 0);
+}
+
+.kysymyksenluonti {
+    margin-top: 5px;
+}
+
+label {
+    margin-left:50px;
+}
+
+#poistu {
+    font-size: 1.1em;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: wheat;
+    position:absolute;
+    top:-33px;
+    right:3px;
+    float: right;
+    border: 2px solid wheat;
+    border-radius: 4px;
+}
+#poistu:hover {
+    background-color: wheat;
+    color: rgba(255, 0, 0);
+}
+#luoaanestys {
+    font-size: 1.5em;
+    width: 300px;
+    color:wheat;
+    background-color: rgb(0, 0, 0, .6);
+    position:absolute;
+    bottom:50px;
+    border: 2px solid wheat;
+    left: 50%;
+    transform: translate(-50%,0);
+    border-radius: 4px;
+}
+#luoaanestys:hover {
+    color:#0d0c0c;
+    background-color:  wheat;
+}
+h3 {
+    opacity: 0.7;
+    color:wheat;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #0d0c0c;
+    text-align: center;
+}
+#aani {
+    color: peru;
+}
+
+.aanet2 {
+    float:right;
+    margin-right:20px;
+}
+
+.kyssari {
+    text-indent: 0;
+    width: 100%;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    margin-left: 5px;
+    margin-top:0px;
+    text-align: left;
+}
+.gallup {
+    text-indent: 20px;
+    float:left;
+    line-height: 60px;
+    margin:0;
+    margin-top:30px;
+    text-align: left;
+    width:490px;
+    background-color: rgb(128, 128, 128, .5);
+    border:5px solid #0d0c0c;
+    border-radius: 10px;
+    border-top:40px solid #0d0c0c;
+}
+.galluppiilotus {
+    display:none;
+}
+#gallup1001  {
+    display:none;
+}
+
+.copyright {
+    width:300px;
+    height:50px;
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    right:0;
+}
+.copyright p {
+    font-weight: bold;
+    font-size: 2em;
+    text-shadow: 2px 2px rgb(216, 167, 167);
+    margin-top:10px;
+}
+.aanet {
+    width:100%;
+    text-align:center;
+    margin-left:80px;
+}
+.tulokset { 
+    width:100%;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+#kysymys {
+    font-size:1.0em;
+    margin-top: 3px;
+    font-family: 'Pacifico', cursive;
+    height:80px;
+    background-color: rgb(128, 128, 128, .1);
+    border:1px solid rgb(253, 229, 185, .5);
+    margin-right: -60px;
+    text-align: left;
+    width:450px;
+}
+.vaihtoehto {
+    font-size:1.0em;
+    margin-top: 3px;
+    font-family: 'Lexend Deca', sans-serif;
+    height:80px;
+    background-color: rgb(128, 128, 128, .1);
+    border:1px solid rgb(253, 229, 185, .5);
+    margin-right: -60px;
+    text-align: left;
+    width:250px;
+}
+
+.avaaBtn {
+    width:60px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8em;
+    background-color: rgb(0, 0, 0, .8);
+    color: wheat;
+    border-radius: 4px;
+    margin-top:-35px;
+    margin-right: 3px;
+    float:right;
+    border: 2px solid wheat;
+}
+.avaaBtn:hover {
+    background-color: wheat;
+    color: rgb(0, 0, 0);
+}
+
+.suljeBtn {
+    display:none;
+    width:60px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8em;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: wheat;
+    border-radius: 4px;
+    margin-top:-35px;
+    margin-right: 3px;
+    float:right;
+    border: 2px solid wheat;
+}
+.suljeBtn:hover {
+    background-color: wheat;
+    color: rgba(255, 0, 0);
+}
+.kysymysGallup {
+    text-shadow: 1px 1px wheat;
+}

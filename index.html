@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Äänestyssovellus</title>
+  <link href="css/muotoilu.css" rel="stylesheet">
+  </head>
+  
+<body>
+  <div class="header"><h1>Äänestyssovellus</h1>    
+      <div class="kirjautuminen" id="kirjautuminen">
+            <label for="kirjaudu">Kirjautuminen:</label>
+            <input type="text" id="kayttaja">
+            <input type="submit" value="Kirjaudu" onclick="kirjaudu()"> 
+      </div>
+      <div class="kirjautuminen" id="kirjautunut">
+            <input id="poisto" type="submit" value="Poista äänestys" onclick="poistaAanestyksia()">
+            <input type="submit" value="Luo äänestys" onclick="luoAanestys()">
+            <input type="submit" value="Kirjaudu ulos" onclick="kirjauduUlos()"> 
+            <p>Kirjautuneena sisään: Ylläpitäjä.</p>
+      </div>
+      <div class="copyright"><p>&copy; Samuli Koppi TiVi20c</p></div>
+  </div>
+
+<div class="sisalto" id="sisalto">
+  <div class="gallup" id="gallup1001">
+        <p><button class="avaaBtn" id="avaa1001" onclick="avaa(this.id)">Avaa</button></p>
+        <p><button class="suljeBtn" id="sulje1001" onclick="sulje(this.id)">Sulje</button></p>
+        <p class="kyssari"><button class="poista" id="poista1001" value="0" onclick="poista(this.id)">Poista äänestys</button><span id="kyssari1001" class="kysymysGallup">Kysymys tulee tähän.</span></p>
+      <div class="galluppiilotus" id="piilota1001">
+        <p><span id="ehto1001a">Vastaus 1</span><button class="aanesta" id="aanet1001a" onclick="lisaaAani(this.id);lisaaProsentit(this.id);">Äänestä</button></p>
+        <p><span id="ehto1001b">Vastaus 2</span><button class="aanesta" id="aanet1001b" onclick="lisaaAani(this.id);lisaaProsentit(this.id);">Äänestä</button></p>
+        <p><span id="ehto1001c">Vastaus 3</span><button class="aanesta" id="aanet1001c" onclick="lisaaAani(this.id);lisaaProsentit(this.id);">Äänestä</button></p>
+        <p><span id="ehto1001d">Vastaus 4</span><button class="aanesta" id="aanet1001d" onclick="lisaaAani(this.id);lisaaProsentit(this.id);">Äänestä</button></p>
+        <h3>Tulokset (prosentit, äänet)</h3>
+        <p id="tulokset"><span class="tulokset" id="ehto1001aa">Vastaus 1</span><span class="aanet" id="aanet1001aaa">0</span><span class="aanet2" id="aanet1001aa">0</span></p>
+        <p id="tulokset"><span class="tulokset" id="ehto1001ba">Vastaus 2</span><span class="aanet" id="aanet1001baa">0</span><span class="aanet2" id="aanet1001ba">0</span></p>
+        <p id="tulokset"><span class="tulokset" id="ehto1001ca">Vastaus 3</span><span class="aanet" id="aanet1001caa">0</span><span class="aanet2" id="aanet1001ca">0</span></p>
+        <p id="tulokset"><span class="tulokset" id="ehto1001da">Vastaus 4</span><span class="aanet" id="aanet1001daa">0</span><span class="aanet2" id="aanet1001da">0</span></p>
+      </div>
+    </div>
+
+<div class="kyselynluonti" id="kyselynluonti">
+    <p><input type="text" id="kysymys" autofocus="autofocus" onFocus="this.select()" value="Kysymys tulee tähän."></p>
+    <br>
+    <p><input class="vaihtoehto" type="text" id="vaihtoehto1" value="Vastaus 1"></p>
+    <p><input class="vaihtoehto" type="text" id="vaihtoehto2" value="Vastaus 2"></p>
+    <p><input class="vaihtoehto" type="text" id="vaihtoehto3" value="Vastaus 3"></p>
+    <p><input class="vaihtoehto" type="text" id="vaihtoehto4" value="Vastaus 4"></p>
+      
+    <h3>Klikkaa tekstiä muokataksesi sitä.</h3>
+    <button class="luontiBtn" id="poistu" onclick="suljeLuonti()">Poistu</button>
+  <button class="luontiBtn" id="luoaanestys" onclick="julkaiseAanestys()">Luo äänestys</button> 
+</div>
+<script src="js/main.js"></script> 
+</body>
+</html>
